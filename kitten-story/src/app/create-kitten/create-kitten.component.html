@@ -1,0 +1,7 @@
+<form (ngSubmit)="createKitten()">
+    <label>Nom du kitten</label>
+    <input name="name" [(ngModel)]="kitten.name" required>
+    <label>Photo du kitten</label>
+    <input name="photo" [(ngModel)]="kitten.photo" required>
+    <input type="submit" value="Envoyer">
+</form>

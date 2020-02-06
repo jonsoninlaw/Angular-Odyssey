@@ -1,0 +1,9 @@
+<ul class="list-group" *ngFor="let kitten of listKittens">
+    <div class="card" style="width: 10rem;">
+      <img [src]="kitten.photo" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{kitten.name}}</h5>
+        <a href="" (click)="adoptKitten($event, listKittens.indexOf(kitten))">Adopter</a>
+      </div>
+    </div>
+  </ul>

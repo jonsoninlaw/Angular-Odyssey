@@ -1,0 +1,8 @@
+<ul class="list-group" *ngFor="let kitten of userKittens">
+    <div class="card" style="width: 10rem;">
+      <img [src]="kitten.photo" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{kitten.name}}</h5>
+      </div>
+    </div>
+  </ul>

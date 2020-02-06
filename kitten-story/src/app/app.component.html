@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="row">Kittens disponibles</div>
+      <div class="row"><app-list-kitten [listKittens]="listKittens" (getKitten)="onGetKitten($event)"></app-list-kitten></div>
+    </div>
+    <div class="col-8">
+      <div class="row"><p class="text-center">Créer un kitten</p></div>
+      <div class="row"><app-create-kitten (newKitten)="onNewKitten($event)"></app-create-kitten></div>
+    </div>
+    <div class="col">
+      <div class="row">Mes kittens</div>
+      <div class="row"><app-user-kitten [userKittens]="userKittens"></app-user-kitten></div>
+    </div>
+  </div>
+</div>
